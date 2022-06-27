@@ -1,0 +1,74 @@
+sqlplus /nolog
+
+SQL> conn / as sysdba
+Conectado.
+
+SQL> CREATE TABLESPACE Dados DATAFILE 'c:\oraclexe\dadosLPV.ora' SIZE 100m AUTOEXTEND ON NEXT 10m;
+Tablespace criado.
+
+SQL> CREATE USER academico IDENTIFIED BY abc DEFAULT TABLESPACE Dados;
+Usußrio criado.
+
+SQL> GRANT DBA TO academico;
+ConcessÒo bem-sucedida.
+
+SQL> CONN academico/abc
+Conectado.
+
+CREATE TABLE alunos (
+    matricula      NUMBER(7) NOT NULL,
+    nomealuno      VARCHAR2(60) NOT NULL,
+    codigocidade   NUMBER(4) NOT NULL,
+    codigocurso    NUMBER(4) NOT NULL
+);
+
+ALTER TABLE alunos ADD CONSTRAINT alunos_pk PRIMARY KEY ( matricula );
+
+CREATE TABLE cidades (
+    codigocidade   NUMBER(4) NOT NULL,
+    nomecidade     VARCHAR2(50) NOT NULL,
+    estado         VARCHAR2(2) NOT NULL
+);
+
+ALTER TABLE cidades ADD CONSTRAINT cidades_pk PRIMARY KEY ( codigocidade );
+
+CREATE TABLE cursos (
+    codigocurso   NUMBER(4) NOT NULL,
+    nomecurso     VARCHAR2(70) NOT NULL
+);
+
+ALTER TABLE cursos ADD CONSTRAINT cursos_pk PRIMARY KEY ( codigocurso );
+
+ALTER TABLE alunos
+    ADD CONSTRAINT alunos_cidades_fk FOREIGN KEY ( codigocidade )
+        REFERENCES cidades ( codigocidade );
+
+ALTER TABLE alunos
+    ADD CONSTRAINT alunos_cursos_fk FOREIGN KEY ( codigocurso )
+        REFERENCES cursos ( codigocurso );
+		
+SELECT * FROM cidades;
+nÒo hß linhas selecionadas	
+
+SQL> DESC cidades;
+ Nome                                      Nulo?    Tipo
+ ----------------------------------------- -------- ----------------------------
+ CODIGOCIDADE                              NOT NULL NUMBER(4)
+ NOMECIDADE                                NOT NULL VARCHAR2(50)
+ ESTADO                                    NOT NULL VARCHAR2(2)
+
+SQL> DESC alunos;
+ Nome                                      Nulo?    Tipo
+ ----------------------------------------- -------- ----------------------------
+ MATRICULA                                 NOT NULL NUMBER(7)
+ NOMEALUNO                                 NOT NULL VARCHAR2(60)
+ CODIGOCIDADE                              NOT NULL NUMBER(4)
+ CODIGOCURSO                               NOT NULL NUMBER(4)
+
+SQL> DESC cursos;
+ Nome                                      Nulo?    Tipo
+ ----------------------------------------- -------- ----------------------------
+ CODIGOCURSO                               NOT NULL NUMBER(4)
+ NOMECURSO                                 NOT NULL VARCHAR2(70)
+
+ 

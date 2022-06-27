@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/01/05 07:52:33.040.pas,C:\Users\Thierry\Documents\Borland Studio Projects\Unit1.pas=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UPrincipal.pas</Transaction>
+    <Transaction>2021/01/05 07:52:33.040.dfm,C:\Users\Thierry\Documents\Borland Studio Projects\Unit1.dfm=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UPrincipal.dfm</Transaction>
+    <Transaction>2021/01/05 07:52:42.803.dfm,C:\Users\Thierry\Documents\Borland Studio Projects\Unit4.dfm=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UCursos.dfm</Transaction>
+    <Transaction>2021/01/05 07:52:42.803.pas,C:\Users\Thierry\Documents\Borland Studio Projects\Unit4.pas=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UCursos.pas</Transaction>
+    <Transaction>2021/01/05 07:52:48.245.dfm,C:\Users\Thierry\Documents\Borland Studio Projects\Unit3.dfm=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UCidades.dfm</Transaction>
+    <Transaction>2021/01/05 07:52:48.245.pas,C:\Users\Thierry\Documents\Borland Studio Projects\Unit3.pas=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UCidades.pas</Transaction>
+    <Transaction>2021/01/05 07:52:52.367.dfm,C:\Users\Thierry\Documents\Borland Studio Projects\Unit2.dfm=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UAlunos.dfm</Transaction>
+    <Transaction>2021/01/05 07:52:52.367.pas,C:\Users\Thierry\Documents\Borland Studio Projects\Unit2.pas=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\UAlunos.pas</Transaction>
+    <Transaction>2021/01/05 07:53:07.427.bdsproj,C:\Users\Thierry\Documents\Borland Studio Projects\Project1.bdsproj=C:\Users\Thierry\Pictures\Faculdade\7 Semestre\LPV\Unidade 3\AULA1\FrontEnd_Academico.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>
